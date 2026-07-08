@@ -1,0 +1,11 @@
+# Secrets never get committed (future-proofing; nothing uses this today)
+.env
+
+# Scratch space for drafts
+.tmp/
+
+# Obsidian UI state, not memory
+.obsidian/
+
+# macOS noise
+.DS_Store
