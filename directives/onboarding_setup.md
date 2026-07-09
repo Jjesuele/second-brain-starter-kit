@@ -61,7 +61,18 @@ Copy the finished `~/.claude/CLAUDE.md` into `claude-backup/CLAUDE.md` so the gi
 3. **If there is no git or no GitHub:** offer `git init` for local-only version history (still worthwhile). If they decline or git is absent, skip cleanly and add a line at the top of their `README.md`: "Backup not set up yet. To add it later: create a private GitHub repo and push this folder to it."
 4. Never block setup on this step. A working brain without a backup beats no brain.
 
-## Step 8: Verify, then hand over
+## Step 8: Optional add-ons (offer once, install only what the owner wants)
+
+None of these are required; the brain works without all of them. Present the list in a few lines, name what each one is and costs (all are free; the only cost is installation and, for plugins, extra instructions loaded into sessions), and install only what the owner picks. Skipping all of them is a fine answer.
+
+1. **Superpowers plugin** — adds structured workflows (brainstorming before building, systematic debugging, test-driven development). In Claude Code run `/plugin marketplace add obra/superpowers`, then `/plugin install superpowers`.
+2. **Security-guidance plugin** — warns about risky commands and code patterns. Run `/plugin marketplace add anthropics/claude-code`, then `/plugin install security-guidance`.
+3. **Obsidian** (free app, obsidian.md) — a nice way to read and browse the vault: the wikilinks become clickable and the note graph is visible. Download it, then "Open folder as vault" pointing at this folder. The json-canvas, obsidian-markdown, and obsidian-bases skills produce files that shine in it.
+4. **Obsidian CLI** — lets Claude Code control the Obsidian app directly (only useful if Obsidian is installed and open). Setup instructions: help.obsidian.md/cli. The obsidian-cli skill works without any other part of this kit changing.
+5. **Defuddle CLI** — cleaner, cheaper web page reading for the defuddle skill. Requires Node.js (nodejs.org). Install with `npm install -g defuddle`. Until it is installed, that one skill simply won't work; nothing else is affected.
+6. **claude.ai connectors (Google Drive, Gmail, Calendar)** — connect the owner's own Google account so documents can flow into `sources/` for mining. Done in the browser at claude.ai → Settings → Connectors → Connect, then the normal Google sign-in. These are per-account authorizations; nothing is stored in this vault.
+
+## Step 9: Verify, then hand over
 
 1. Ask the owner to start a **new** Claude Code session in the vault and ask it: "Who am I and how do I like to write?" It should answer from their files, not generically.
 2. In that new session, have it draft two sentences on any topic in their voice, and check the draft against `voice.md` together.

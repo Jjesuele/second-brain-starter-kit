@@ -9,6 +9,15 @@ This kit ships as blank scaffolding plus a guided setup. You answer an interview
 1. **Claude Code** installed and working. That is the app this kit runs on. If you do not have it, install it from Anthropic first.
 2. **A free GitHub account** (recommended, not required). With one, your whole brain gets a private online backup and version history. Without one, everything still works, it just lives only on your computer.
 
+### Starting from a brand-new Mac
+
+If Claude Code is not on the machine yet:
+
+1. You need a Claude account with a paid plan (Pro or Max) at claude.ai. Claude Code runs on that plan; there is no separate cost.
+2. Install Claude Code: download the desktop app from claude.com/claude-code, or if you prefer the terminal, follow the install instructions at docs.anthropic.com/en/docs/claude-code. Either works with this kit.
+3. Open it once and sign in with your Claude account. If it can answer "hello", you are ready.
+4. Git ships with macOS. The first time you run a git command, the Mac may offer to install the command line tools; accept.
+
 ## Get your copy
 
 **With GitHub (recommended):**
@@ -64,6 +73,25 @@ Two extras ship in `dot-claude/optional-skills/` and `directives/optional/`, swi
 - **Recruiting prep**: firm research, coffee chat prep, interview prep, and a story bank.
 
 If either fits your life, tell Claude: "install the optional [real estate / recruiting] module" and it will copy the skill into place.
+
+## Optional add-ons
+
+Setup offers these once (Step 8 of the onboarding directive); all are free and all are skippable:
+
+- **Superpowers plugin** — structured workflows for building and debugging with Claude Code.
+- **Security-guidance plugin** — warnings about risky commands and code.
+- **Obsidian** (obsidian.md) — a beautiful way to read the vault; wikilinks become clickable and the note graph is visible.
+- **Obsidian CLI and Defuddle CLI** — small command line helpers two of the skills use; each skill names its own install command.
+
+### Connect your Google account (optional)
+
+If you use claude.ai with the same account, you can connect Google Drive, Gmail, and Calendar so Claude can pull your documents (class readings, syllabi, exports) into `sources/` for mining into the brain:
+
+1. In your browser, go to claude.ai → **Settings** → **Connectors**.
+2. Click **Connect** next to Google Drive (and Gmail or Google Calendar if you want them).
+3. Complete the normal Google sign-in and consent screen.
+
+These authorizations live on your Claude account, not in this folder. Nothing about them is stored in the vault, and you can disconnect them any time from the same settings page. Skipping this changes nothing else; you can always drag files into `sources/` by hand.
 
 ## Getting updates
 
