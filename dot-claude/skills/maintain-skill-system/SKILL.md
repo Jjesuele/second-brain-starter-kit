@@ -16,6 +16,7 @@ The owner's skills exist in two copies: **live** (`~/.claude/skills/`, what Clau
 3. **Re-read the edited rule as a literal-minded executor.** Ask: given only this wording, would a weaker model have avoided the recorded misfire? If the wording relies on inference ("use judgment", "be careful"), rewrite it as a checkable instruction.
 4. **Sync the same session:**
    - Copy the edited skill folder to the vault's `dot-claude/skills/<same-name>/`.
+   - If a second assistant runs off the same vault (for example Codex, which loads skills from `~/.agents/skills/`), copy the edit to that assistant's live skill folder too. Adapt wording by hand, never by find-and-replace on the assistant's name: mechanical renaming invents paths that do not exist. After any adaptation, run `ls` on every absolute path mentioned in the file and confirm each exists.
    - Commit and push the vault.
 5. **Renames and merges delete the corpse everywhere.** Removing or renaming a skill means deleting the old folder in BOTH the live directory and the vault source. A stale source folder resurrects dead skills on the next install or restore.
 6. **Capture durable lessons.** A misfire that revealed a general pattern goes to the brain via the brain-capture skill, not just into the skill file.
@@ -26,6 +27,7 @@ The owner's skills exist in two copies: **live** (`~/.claude/skills/`, what Clau
 - [ ] Dollar-digit grep on every touched SKILL.md returned nothing, and the result was stated
 - [ ] The new wording is checkable by a literal reader (no "appropriately", "thoughtfully", "use judgment")
 - [ ] `diff -r` between the live folder and the vault source folder is clean for every touched skill
+- [ ] If a second assistant shares the vault, its live copy was updated and every absolute path in the touched SKILL.md passed an `ls` check
 - [ ] Vault committed and pushed
 
 **Good:** "Patched the pushback rule, grep for dollar-digit clean, synced to dot-claude/skills/, diff clean, vault pushed."
