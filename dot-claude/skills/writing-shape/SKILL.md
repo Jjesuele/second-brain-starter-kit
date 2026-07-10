@@ -12,6 +12,8 @@ Then run a shaping session that produces a separate article document. This is **
 
 If the user did not say where to save the article, ask once and remember the path.
 
+If the user's setup includes a voice or style rules file (for example `context/voice.md` in their vault), read it in full once per session before drafting the first block. Draft every block following that file, not just avoiding its bans. Then, before writing any block to disk, search the block for anything the file bans and rewrite every hit before the block touches the file. This applies to text written into the article file, not to your conversation with the user.
+
 </what-to-do>
 
 <supporting-info>
@@ -40,7 +42,7 @@ The lever is what you make a prerequisite versus what you ground inside the arti
 
 ## Conversational feel
 
-This is a grilling session inverted. In ideation, the question was "what are you actually noticing?" Here it's "what is this article actually arguing, and in what order does the reader need to hear it?" Push back. Refuse to let weak transitions slide. If a paragraph doesn't earn its place, cut it.
+This is a grilling session inverted. In the fragments session (`/writing-fragments`), the question was "what are you actually noticing?" Here it's "what is this article actually arguing, and in what order does the reader need to hear it?" Push back. Refuse to let weak transitions slide. If a paragraph doesn't earn its place, cut it.
 
 Specific moves to keep using:
 

@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 <what-to-do>
 
-This is pure **explore**: widen the space of what could be written without committing to structure — committing is _exploit_, a separate skill's job. Run a grilling session that produces fragments, interviewing the user relentlessly about whatever they want to write about. Imposing phases, outlines, or article structure is out of scope here.
+This is pure **explore**: widen the space of what could be written without committing to structure — committing is _exploit_, the job of the writing-shape skill (`/writing-shape`). Run a grilling session that produces fragments, interviewing the user relentlessly about whatever they want to write about. Imposing phases, outlines, or article structure is out of scope here.
 
 As fragments emerge from either side of the conversation, append them to a single markdown file.
 
@@ -15,6 +15,8 @@ If the user did not pass a path, ask once where to save the document, then remem
 Capture fragments from the very first thing the user says, including the initial prompt.
 
 On first write, put a single H1 at the top with a working title (it can change later) and nothing else — no metadata, no TOC, no date.
+
+When the user says they are done exploring, tell them the next step by name: run `/writing-shape` and pass it this fragments file as the input pile.
 
 </what-to-do>
 
