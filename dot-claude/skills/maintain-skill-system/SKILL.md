@@ -15,7 +15,7 @@ The owner's skills exist in two copies: **live** (`~/.claude/skills/`, what Clau
 2. **Never write a dollar sign followed by a digit in a SKILL.md body.** Skill invocation can substitute those tokens with argument words, corrupting the rendered instructions. Spell amounts out: "zero dollars", "about 200 thousand tokens". After any edit, run a grep for dollar-digit patterns on the file and state the result.
 3. **Re-read the edited rule as a literal-minded executor.** Ask: given only this wording, would a weaker model have avoided the recorded misfire? If the wording relies on inference ("use judgment", "be careful"), rewrite it as a checkable instruction.
 4. **Sync the same session:**
-   - Copy the edited skill folder to the vault's `dot-claude/skills/<same-name>/`.
+   - Copy the edited skill folder to the vault's `dot-claude/skills/<same-name>/` with `cp -R`. **A symlink is never a backup.** Every copy must be a real directory of real files: run `ls -la` on the folder and confirm no entry starts with `l`, then read one file inside the copy and confirm it has content. A symlink dies with its target, and git stores only the pointer, not the files behind it — so a symlinked "backup" protects nothing.
    - Commit and push the vault.
 5. **Renames and merges delete the corpse everywhere.** Removing or renaming a skill means deleting the old folder in BOTH the live directory and the vault source. A stale source folder resurrects dead skills on the next install or restore.
 6. **Capture durable lessons.** A misfire that revealed a general pattern goes to the brain via the brain-capture skill, not just into the skill file.
@@ -26,6 +26,7 @@ The owner's skills exist in two copies: **live** (`~/.claude/skills/`, what Clau
 - [ ] Dollar-digit grep on every touched SKILL.md returned nothing, and the result was stated
 - [ ] The new wording is checkable by a literal reader (no "appropriately", "thoughtfully", "use judgment")
 - [ ] `diff -r` between the live folder and the vault source folder is clean for every touched skill
+- [ ] No touched copy is a symlink (checked with `ls -la`), and a file inside the synced copy was read and had content
 - [ ] Vault committed and pushed
 
 **Good:** "Patched the pushback rule, grep for dollar-digit clean, synced to dot-claude/skills/, diff clean, vault pushed."
