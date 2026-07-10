@@ -12,7 +12,11 @@ Then run a shaping session that produces a separate article document. This is **
 
 If the user did not say where to save the article, ask once and remember the path.
 
+At the start of the session, before drafting candidate openings, ask the user three questions in one message and remember the answers for the whole session: what the piece is for and what citation or formatting style applies (an MLA class essay, APA, a plain article, or something else); roughly how long it should be; and the final deliverable format (a formatted Word docx, markdown, or both). Skip any question the user already answered in their own words. The answers govern the session: style sets the citations and document apparatus, length is the budget the blocks compete for (when an agreed block would push the article past the target length, say so before writing it), and the deliverable sets the wrap-up step.
+
 If the user's setup includes a voice or style rules file (for example `context/voice.md` in their vault), read it in full once per session before drafting the first block. Draft every block following that file, not just avoiding its bans. Then, before writing any block to disk, search the block for anything the file bans and rewrite every hit before the block touches the file. This applies to text written into the article file, not to your conversation with the user.
+
+When the user declares the article done, produce the deliverable they chose at the start before ending the session (see Delivering).
 
 </what-to-do>
 
@@ -72,10 +76,14 @@ When choosing how to render a block, weigh these tradeoffs out loud with the use
 
 Append to the article file as each block is agreed. Re-read the file from disk before every write — the user may have edited between turns. Never overwrite blindly. If the user wants a paragraph rewritten, edit that specific paragraph in place; leave the rest alone.
 
+## Delivering
+
+When the user says the article is done, build the deliverable chosen at the intake before ending the session. If it is a Word document, apply the formatting conventions the user's style requires (running header, heading block, spacing, and reference-page rules) rather than a converter's defaults, use clearly marked placeholders for any heading detail the user has not supplied, and verify the output by extracting its text and confirming the full article made it in. State the output path in the delivery message.
+
 ## Out of scope
 
 - Mining for new fragments that aren't in the pile (handle gaps as in "Pulling from the pile").
 - Editing the raw material file.
-- Publishing, formatting for a specific platform, or adding frontmatter the user didn't ask for.
+- Publishing, formatting for platforms the user did not choose at the intake, or adding frontmatter the user didn't ask for. Producing the deliverable chosen at the start of the session is in scope.
 
 </supporting-info>
