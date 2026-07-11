@@ -16,5 +16,5 @@ How work gets done in this system. Check output against these before delivering.
 ## Structure
 
 6. **Wikilinks connect notes.** Link text matches the target filename exactly so links resolve in Obsidian. Link where following it teaches something real, usually 2 to 5 links per note.
-7. **INDEX.md stays current.** Every new brain note gets one line in the index.
+7. **INDEX.md stays current.** Every new brain note gets one line in the index. Renaming or deleting a note includes fixing its index line and every inbound wikilink in the same edit, so no broken links are left behind.
 8. **Quality gates run before delivery.** Every directive ends with a checklist. Work that fails a gate gets fixed before the owner sees it.
