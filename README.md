@@ -24,7 +24,8 @@ If Claude Code is not on the machine yet:
 
 1. On this repo's page, click **Use this template → Create a new repository**.
 2. Name it whatever you like and set it to **Private**. Private matters: this folder will hold your personal notes.
-3. Get it onto your computer: `git clone <your new repo URL>`, or use the GitHub Desktop app if you prefer clicking to typing.
+3. Get it onto your computer. The smoothest path is the free **GitHub Desktop** app (desktop.github.com): install it, sign in through your browser, click **Clone a repository**, pick your new repo, and choose where it lands. This also stores your GitHub credentials on the machine, so every backup after this pushes without prompts.
+4. Terminal alternative, only if git is already set up to talk to GitHub: `git clone <your new repo URL>`. Heads up: GitHub no longer accepts your account password for git commands, so a fresh machine will fail here with "password authentication is not supported" until you set up a personal access token or SSH key. If you hit that, use GitHub Desktop instead; it is the two-minute fix.
 
 **Without GitHub:** click **Code → Download ZIP** on this page, unzip it, and you have the same folder. You can add the backup later.
 
