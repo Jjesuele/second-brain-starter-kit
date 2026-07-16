@@ -11,7 +11,7 @@ Before anything else, tell the owner in one sentence what this setup will do: in
 
 ## Step 2: Install the Claude skills
 
-1. Copy every folder from `dot-claude/skills/` into `~/.claude/skills/`.
+1. Copy every folder from `dot-claude/skills/` into `~/.claude/skills/` (on Windows that resolves to `C:\Users\<name>\.claude\skills`).
 2. Do NOT copy `dot-claude/optional-skills/` unless the owner asks for those modules (offer them once, in one sentence: real estate deal analysis and recruiting prep exist as opt-ins).
 3. If a skill folder with the same name already exists in `~/.claude/skills/`, ask before overwriting.
 4. Keep the `dot-claude/` folder in the vault. It is the install and update source.

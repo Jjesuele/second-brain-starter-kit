@@ -20,6 +20,7 @@ The user's voice is defined in their vault at `context/voice.md`, calibrated fro
    - Rule-of-three padding ("clear, concise, and compelling") → cut to the one word that matters
    - Hedging stacks ("arguably one of the most significant") → one plain claim
    - Short dramatic fragments ("And that matters. A lot.") → fold into a full sentence, unless their voice.md says fragments are their register
+   - Staccato widening ("It's not just X. It's Y.") → fold into one flowing sentence, and keep any widening move to at most once per page; a closer used in every paragraph stops being a closer
    - Inflated register ("developed financial models", "gained valuable insight", "eager to deepen my understanding") → what they'd actually say ("built Excel models", "what stayed with me was")
 5. **Positive-voice pass.** Match the draft to what their voice.md says they DO: their sentence rhythm, their habitual transitions, their signature moves, their hedging style. Do not import moves their file does not describe.
 6. **Concreteness check.** Find the most specific, personal detail in the original draft. It must survive into the final version. If a sentence could appear in any candidate's email or any student's essay, rewrite it around a real detail from the draft's subject. If no real detail exists, ask the user for one. Never invent one.
@@ -32,7 +33,7 @@ The user's voice is defined in their vault at `context/voice.md`, calibrated fro
 - [ ] The original draft's most concrete detail is still present
 - [ ] No facts, numbers, or claims added that were not in the original draft
 
-## Worked Example — a recruiting email (a real cheap-model failure, then the fix)
+## Worked Example 1 — a recruiting email (a real cheap-model failure, then the fix)
 
 **The user's draft:**
 > I'm a junior studying econ. This summer I interned at a real estate firm where I worked on excel models and read offering memos for office deals. I liked seeing how the numbers actually decide whether a deal happens. I want to learn more about how your firm thinks about acquisitions.
@@ -46,6 +47,16 @@ Why it fails: inflated register throughout, generic ambition ("strong interest")
 > I'm a junior studying economics. This summer I interned at a real estate firm, where I built Excel models and read offering memos for office deals. What stayed with me was how directly the numbers decide whether a deal happens, and I would like to hear how your team makes that judgment on the acquisitions side.
 
 Why it passes: plain register, the writer's concrete observation kept and sharpened, nothing invented.
+
+## Worked Example 2 — essay register (the same tells in academic clothing)
+
+**FAIL:**
+> Federal grazing policy represents a multifaceted challenge. Ranchers depend on public lands. Environmentalists want them protected. Moreover, climate change is intensifying these tensions, making it arguably one of the most significant land-use debates in the American West.
+
+**PASS:**
+> Federal grazing policy asks the government to serve two groups that want opposite things from the same land. Ranchers depend on public grazing allotments to stay solvent, while environmental groups see those same allotments as degraded habitat that may not recover. In this sense, the debate is not just about cattle, but about who public land is actually for.
+
+Why it passes: the banned words and hedging stack are gone, the staccato fragments are folded into flowing sentences, the claims got specific, and the one widening move sits in the closer where it belongs. Adjust the pass version to whatever the user's own voice.md prescribes; the fail version is wrong for everyone.
 
 ## Rationalizations — all of these mean go back and rewrite
 

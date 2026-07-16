@@ -40,6 +40,7 @@ Three layers, adapted from the DOE pattern (Directive, Orchestration, Execution)
 4. **Write in the owner's voice.** Voice rules live in `context/voice.md`. Anything carrying their name gets checked against that file.
 5. **Confidentiality.** Whatever the owner marked private in `context/standards.md` stays inside the vault. When in doubt, genericize.
 6. **This vault can be read in Obsidian.** Use `[[wikilinks]]` between brain notes, with link text matching the target filename exactly so links resolve.
+7. **End file-producing tasks with a capture check.** Any task that created or edited files for the owner, inside or outside this vault (scheduled tasks, settings, memory files all count), ends with either a brain capture offer or the exact sentence "Nothing here passed the brain filter." Never silence. A task that was itself a brain capture already satisfies this.
 
 ## Self-annealing protocol
 
@@ -48,6 +49,7 @@ After every task: if a step in a directive was wrong or missing, update the dire
 ## Maintenance
 
 - After adding brain notes, add one line each to `brain/INDEX.md`.
+- If a task creates a new top-level folder in this vault, offer to add a matching Obsidian graph color rule (Graph view → Groups, a `path:` filter per folder) so its notes are not gray dots.
 - Every few weeks, run the audit in `directives/monthly_context_audit.md`.
 - If the owner's `~/.claude/CLAUDE.md` changed, refresh the copy in `claude-backup/`.
 - Git tracks everything. Commit after meaningful changes with a clear message, then push if a remote is set up. If push fails (offline), commit anyway and push next time.

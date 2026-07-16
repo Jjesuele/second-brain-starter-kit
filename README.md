@@ -9,14 +9,18 @@ This kit ships as blank scaffolding plus a guided setup. You answer an interview
 1. **Claude Code** installed and working. That is the app this kit runs on. If you do not have it, install it from Anthropic first.
 2. **A free GitHub account** (recommended, not required). With one, your whole brain gets a private online backup and version history. Without one, everything still works, it just lives only on your computer.
 
-### Starting from a brand-new Mac
+### Starting from scratch
 
-If Claude Code is not on the machine yet:
+If Claude Code is not on the machine yet, these two steps are the same on any computer:
 
 1. You need a Claude account with a paid plan (Pro or Max) at claude.ai. Claude Code runs on that plan; there is no separate cost.
-2. Install Claude Code: download the desktop app from claude.com/claude-code, or if you prefer the terminal, follow the install instructions at docs.anthropic.com/en/docs/claude-code. Either works with this kit.
-3. Open it once and sign in with your Claude account. If it can answer "hello", you are ready.
-4. Git ships with macOS. The first time you run a git command, the Mac may offer to install the command line tools; accept.
+2. Install Claude Code: download the desktop app from claude.com/claude-code, or if you prefer the terminal, follow the install instructions at docs.anthropic.com/en/docs/claude-code. Either works with this kit. Open it once and sign in with your Claude account. If it can answer "hello", you are ready.
+
+Then get git, which differs by machine:
+
+**On a Mac:** git ships with macOS. The first time you run a git command, the Mac may offer to install the command line tools; accept.
+
+**On a Windows PC:** git does NOT ship with Windows. The easy path is **GitHub Desktop** (desktop.github.com), which includes git and handles sign-in; the next section recommends it anyway. If you prefer the command line, install **Git for Windows** from git-scm.com instead. Either one is enough.
 
 ## Get your copy
 
@@ -25,7 +29,7 @@ If Claude Code is not on the machine yet:
 1. On this repo's page, click **Use this template → Create a new repository**.
 2. Name it whatever you like and set it to **Private**. Private matters: this folder will hold your personal notes.
 3. Get it onto your computer. The smoothest path is the free **GitHub Desktop** app (desktop.github.com): install it, sign in through your browser, click **Clone a repository**, pick your new repo, and choose where it lands. This also stores your GitHub credentials on the machine, so every backup after this pushes without prompts.
-4. Terminal alternative, only if git is already set up to talk to GitHub: `git clone <your new repo URL>`. Heads up: GitHub no longer accepts your account password for git commands, so a fresh machine will fail here with "password authentication is not supported" until you set up a personal access token or SSH key. If you hit that, use GitHub Desktop instead; it is the two-minute fix.
+4. Terminal alternative, only if git is already set up to talk to GitHub: `git clone <your new repo URL>`. Heads up: GitHub no longer accepts your account password for git commands, so a fresh machine will fail here with "password authentication is not supported" until you set up a personal access token or SSH key. If you hit that, use GitHub Desktop instead; it is the two-minute fix on Mac and Windows alike.
 
 **Without GitHub:** click **Code → Download ZIP** on this page, unzip it, and you have the same folder. You can add the backup later.
 

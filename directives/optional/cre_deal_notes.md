@@ -32,6 +32,7 @@ Turn commercial real estate work product into a structured, dated brain note: de
 
 - [ ] Facts and analysis are clearly separated
 - [ ] Every number traces to the source material; unknowns are labeled, not guessed
+- [ ] Tear-downs and OM reviews: pricing verdict present (buyer type, return target, bid range, gap to the seller's number), or the teardown skill's missing-data rule explicitly invoked
 - [ ] "What this taught me" section exists and says something real
 - [ ] Confidentiality: note stays in the vault; nothing deal-identifying leaves it
 - [ ] Note is dated, linked, and indexed

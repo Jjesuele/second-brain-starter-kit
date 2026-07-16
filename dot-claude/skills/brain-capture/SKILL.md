@@ -51,6 +51,8 @@ Specifics or it doesn't count: a note with no numbers, names, dates, or exact ph
 
 When a substantive work session is wrapping up (not casual Q&A), offer once: "Anything here worth saving to the brain? I'd propose: ..." with the candidate list already applied through the filter. If the user declines, drop it. Do not offer after trivial exchanges.
 
+Checkable rule, because a soft version of this misfires in practice: a task that created or edited files for the user, inside or outside the vault (essays, work notes, research, documents, scheduled tasks, settings, memory files), counts as substantive. Before reporting such a task done, run the filter and end the final message with either the capture offer or the exact sentence "Nothing here passed the brain filter." Silence is not an allowed ending for a file-producing task; the no-keepers sentence is the correct ending for small ones. A task that was itself a brain capture already satisfies this. Conversations that produced no files stay governed by the paragraph above.
+
 ## Pushback rules
 
 - Asked to bulk-import history (email, Drive, old chats) → push back once: bulk mining fills the vault with unvetted notes and burns heavy tokens; offer a targeted single-item grab instead. If they insist, proceed with the filter applied hard.
