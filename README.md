@@ -88,6 +88,15 @@ Setup offers these once (Step 8 of the onboarding directive); all are free and a
 - **Obsidian** (obsidian.md) — a beautiful way to read the vault; wikilinks become clickable and the note graph is visible.
 - **Obsidian CLI and Defuddle CLI** — small command line helpers two of the skills use; each skill names its own install command.
 
+**How to install the two plugins.** In Claude Code, type `/plugin` to open the plugin manager. Add the two sources once:
+
+```
+/plugin marketplace add obra/superpowers
+/plugin marketplace add anthropics/claude-code
+```
+
+Then pick **superpowers** and **security-guidance** from the menu and install them. Both are free and run on your Claude plan; nothing here costs extra. You can skip either and add it later the same way.
+
 ### Connect your Google account (optional)
 
 If you use claude.ai with the same account, you can connect Google Drive, Gmail, and Calendar so Claude can pull your documents (class readings, syllabi, exports) into `sources/` for mining into the brain:
