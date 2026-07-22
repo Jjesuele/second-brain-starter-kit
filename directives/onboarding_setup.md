@@ -49,6 +49,7 @@ Show the owner each file after writing it, and adjust until they say it sounds l
 2. Fill its placeholders from the interview, and wire every vault path in it to the real vault location from Step 1.
 3. **If `~/.claude/CLAUDE.md` already exists**, do not overwrite it. Copy the existing file to `~/.claude/CLAUDE.md.bak`, show the owner a diff between theirs and the new one, and merge with their approval. Only a missing or empty file gets written directly.
 4. Write the result to `~/.claude/CLAUDE.md`.
+5. **Windows fallback if the write to `~/.claude/CLAUDE.md` is blocked.** Claude Code guards writes outside the open project folder, and on Windows approving the prompt does not always clear it. If the write comes back blocked, write the finished operating file to `claude-backup/CLAUDE.md` inside the vault instead (writes inside the project folder are never blocked), then tell the owner to copy that file by hand into `%USERPROFILE%\.claude\CLAUDE.md` using File Explorer. Reach the folder by typing `%USERPROFILE%\.claude` into the Explorer address bar; create it if it is missing. The manual copy has no permission wall.
 
 ## Step 6: Back up the operating file into the vault
 

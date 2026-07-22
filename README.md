@@ -20,7 +20,7 @@ Then get git, which differs by machine:
 
 **On a Mac:** git ships with macOS. The first time you run a git command, the Mac may offer to install the command line tools; accept.
 
-**On a Windows PC:** git does NOT ship with Windows. The easy path is **GitHub Desktop** (desktop.github.com), which includes git and handles sign-in; the next section recommends it anyway. If you prefer the command line, install **Git for Windows** from git-scm.com instead. Either one is enough.
+**On a Windows PC:** git does NOT ship with Windows. The easy path is **GitHub Desktop** (desktop.github.com), which includes git and handles sign-in; the next section recommends it anyway. One catch: the git bundled inside GitHub Desktop is not visible to Claude Code, so if Claude Code says git is not installed, also install standalone **Git for Windows** from git-scm.com (default options), then fully quit and reopen Claude Code so it picks up the new install. A newly installed git is invisible to any app that was already running.
 
 ## Get your copy
 
